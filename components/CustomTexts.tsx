@@ -6,12 +6,12 @@ import { textContainer, textVariant2 } from "@/utils/motions"
 
 type TypingTextProps = {
   title: string
-  textStyles: string
+  textStyles?: string
 }
 
 type TitleTextProps = {
   title: string | React.ReactNode
-  textStyles: string
+  textStyles?: string
 }
 
 export const TypingText = ({ title, textStyles }: TypingTextProps) => (
