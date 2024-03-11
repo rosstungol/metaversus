@@ -1,14 +1,20 @@
 "use client"
 
+import React from "react"
 import { motion } from "framer-motion"
 import { textContainer, textVariant2 } from "@/utils/motions"
 
-type CustomTextProps = {
+type TypingTextProps = {
   title: string
   textStyles: string
 }
 
-export const TypingText = ({ title, textStyles }: CustomTextProps) => (
+type TitleTextProps = {
+  title: string | React.ReactNode
+  textStyles: string
+}
+
+export const TypingText = ({ title, textStyles }: TypingTextProps) => (
   <motion.p
     variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
